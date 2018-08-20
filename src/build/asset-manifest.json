@@ -1,0 +1,12 @@
+{
+  "runtime~main.js": "/dist/sym/static/js/runtime~main.f79f688e.js",
+  "runtime~main.js.map": "/dist/sym/static/js/runtime~main.f79f688e.js.map",
+  "vendors.css": "/dist/sym/static/css/vendors.ab81d069.chunk.css",
+  "vendors.js": "/dist/sym/static/js/vendors.6d62f9c9.chunk.js",
+  "vendors.js.map": "/dist/sym/static/js/vendors.6d62f9c9.chunk.js.map",
+  "main.css": "/dist/sym/static/css/main.cb4cc2a9.chunk.css",
+  "main.js": "/dist/sym/static/js/main.48543dc7.chunk.js",
+  "main.js.map": "/dist/sym/static/js/main.48543dc7.chunk.js.map",
+  "static/media/jss-logo.png": "/dist/sym/static/media/jss-logo.54f6759d.png",
+  "index.html": "/dist/sym/index.html"
+}
