@@ -1,14 +1,14 @@
 {
-  "name": "sym",
-  "description": "Sitecore Symposium Web App",
+  "name": "jssreactstarter",
+  "description": "Sitecore JSS React Starter",
   "version": "9.0.6",
   "private": true,
   "config": {
-    "appName": "sym",
+    "appName": "jssreactstarter",
     "rootPlaceholders": [
       "jss-main"
     ],
-    "sitecoreDistPath": "/dist/sym",
+    "sitecoreDistPath": "/dist/jssreactstarter",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "language": "en"
   },
