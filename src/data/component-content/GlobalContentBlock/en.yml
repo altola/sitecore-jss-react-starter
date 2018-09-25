@@ -1,0 +1,4 @@
+id: global-content-block
+componentName: ContentBlock
+fields:
+  heading: Global Block

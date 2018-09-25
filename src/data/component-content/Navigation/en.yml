@@ -1,0 +1,20 @@
+id: global-nav
+componentName: GlobalNav
+fields:
+  navLinks:
+    - template: NavLink
+      name: home-link
+      displayName: Home Link
+      fields:
+        title: Home
+        link:
+          href: /
+          text: Home
+    - template: NavLink
+      name: about-link
+      displayName: About Link
+      fields:
+        title: About
+        link:
+          href: /about
+          text: About

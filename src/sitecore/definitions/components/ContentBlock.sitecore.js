@@ -15,6 +15,8 @@ export default function(manifest) {
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
       { name: 'content', type: CommonFieldTypes.RichText },
+      { name: 'image', type: CommonFieldTypes.Image },
     ],
+    params: ["headingStyle"]
   });
 }
