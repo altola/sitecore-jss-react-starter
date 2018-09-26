@@ -9,7 +9,6 @@ import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore
 export default function(manifest) {
   manifest.addComponent({
     name: 'Carousel',
-    displayFieldEditorButton: true,
     icon: SitecoreIcon.DocumentTag,
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },

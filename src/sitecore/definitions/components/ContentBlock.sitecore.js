@@ -10,6 +10,7 @@ export default function(manifest) {
   manifest.addComponent({
     name: 'ContentBlock',
     displayName: 'Content Block',
+    fieldEditorFields: ["image"],
     // totally optional, but fun
     icon: SitecoreIcon.DocumentTag,
     fields: [

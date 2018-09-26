@@ -1,5 +1,5 @@
 import React from 'react';
-import { Placeholder, withSitecoreContext } from '@sitecore-jss/sitecore-jss-react';
+import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
 
 import { translate } from 'react-i18next';
 import Helmet from 'react-helmet';
@@ -19,7 +19,7 @@ const Layout = ({ route }) => (
       <meta name="description" content={route.fields.pageDescription.value} />
     </Helmet>
 
-    <Placeholder name="jss-nav" rendering={route} />
+    <Placeholder name="jss-nav" rendering={route} routeFields={route.fields} />
 
     {/* root placeholder for the app, which we add components to using route data */}
     <div className="container" style={{backgroundImage: `url(${route.fields.backgroundImage ? route.fields.backgroundImage.value.src : null})`}}>
@@ -28,4 +28,4 @@ const Layout = ({ route }) => (
   </React.Fragment>
 );
 
-export default withSitecoreContext(Layout);
+export default Layout;
