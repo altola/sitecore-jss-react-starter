@@ -1,15 +1,15 @@
 {
-  "name": "jssreactstarter",
+  "name": "AlintaJssApp",
   "description": "Sitecore JSS React Starter",
   "version": "9.0.6",
   "private": true,
   "config": {
-    "appName": "jssreactstarter",
+    "appName": "AlintaJssApp",
     "rootPlaceholders": [
       "jss-main",
       "jss-nav"
     ],
-    "sitecoreDistPath": "/dist/jssreactstarter",
+    "sitecoreDistPath": "/dist/AlintaJssApp",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "language": "en"
   },
