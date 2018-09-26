@@ -1,14 +1,19 @@
 id: home-page
+template: Home Route
 fields:
-  pageTitle: Welcome to Sitecore JSS
+  pageTitle: Route level page title
+  pageDescription: Home description
+  logo:
+    src: /assets/melbourne.jpg
 placeholders:
   jss-nav:
   - id: global-nav
   jss-main:
   - id: global-content-block
+  - componentName: Carousel
   - componentName: ContentBlock
     fields:
-      heading: Welcome to Sitecore JSS
+      heading: changed title 123123
       content: |
           <p>Let's build something awesome now.</p>
       image:

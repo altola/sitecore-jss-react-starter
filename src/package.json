@@ -6,7 +6,8 @@
   "config": {
     "appName": "jssreactstarter",
     "rootPlaceholders": [
-      "jss-main"
+      "jss-main",
+      "jss-nav"
     ],
     "sitecoreDistPath": "/dist/jssreactstarter",
     "sitecoreConfigPath": "/App_Config/Include/zzz",

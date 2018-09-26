@@ -11,7 +11,7 @@ const GlobalNav = (props) => (
       </h5>
       <nav className="my-2 my-md-0 mr-md-3">
         {props.fields.navLinks.map((navLink, index) =>
-          <NavLink to={navLink.fields.link.value.href}>
+          <NavLink key={index} to={navLink.fields.link.value.href}>
             {navLink.fields.title ?
               navLink.fields.title.value
               : navLink.fields.link.value.text}

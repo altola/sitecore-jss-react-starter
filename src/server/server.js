@@ -22,6 +22,8 @@ export function renderView(callback, path, data, viewBag) {
   try {
     const state = parseServerData(data, viewBag);
 
+    //console.log(`View bag: ${JSON.parse(viewBag).hello}`)
+
     setServerSideRenderingState(state);
 
     /*

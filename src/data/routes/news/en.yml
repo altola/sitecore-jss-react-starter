@@ -1,7 +1,7 @@
-id: about-page
+id: news-page
 template: Section Route
 fields:
-  pageTitle: About JSS
+  pageTitle: News about JSS
   pageDescription: Home description
   backgroundImage:
     src: /assets/melbourne.jpg
@@ -10,11 +10,10 @@ placeholders:
   - id: global-nav
   jss-main:
   - id: global-content-block
-  - componentName: AdvancedContentBlock
+  - componentName: ContentBlock
     fields:
-      heading: About Us
+      heading: News
       content: |
           <p>We are building something awesome already.</p>
-      advanced: true
     params:
       headingStyle: display-1

@@ -2,18 +2,19 @@
 import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
 
 /**
- * Adds the Carousel component to the disconnected manifest.
+ * Adds the AdvancedContentBlock component to the disconnected manifest.
  * This function is invoked by convention (*.sitecore.js) when 'jss manifest' is run.
  * @param {Manifest} manifest Manifest instance to add components to
  */
 export default function(manifest) {
   manifest.addComponent({
-    name: 'Carousel',
-    displayFieldEditorButton: true,
+    name: 'AdvancedContentBlock',
     icon: SitecoreIcon.DocumentTag,
+    inherits: ["ContentBlock"],
     fields: [
-      { name: 'heading', type: CommonFieldTypes.SingleLineText },
+      { name: 'advanced', type: CommonFieldTypes.Checkbox },
     ],
+    params: ["headingStyle"]
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
     register it here, or components added to that placeholder will not be returned by Sitecore:

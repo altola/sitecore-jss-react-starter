@@ -19,19 +19,31 @@ export default function addRoutesToManifest(manifest) {
   // which most apps will want for metadata like page titles, SEO metas, or OpenGraph.
   // You can add additional non-default route types using `manifest.addRouteType()`,
   // which routes can use by setting `template: YourCustomRouteTypeName` in their definition.
-  const appTemplateSection = 'Page Metadata';
+  // const appTemplateSection = 'Page Metadata';
 
-  manifest.setDefaultRouteType({
-    name: 'App Route',
-    fields: [
-      {
-        name: 'pageTitle',
-        displayName: 'Page Title',
-        section: appTemplateSection,
-        type: CommonFieldTypes.SingleLineText,
-      },
-    ],
-  });
+  // manifest.setDefaultRouteType({
+  //   name: 'App Route',
+  //   fields: [
+  //     {
+  //       name: 'pageTitle',
+  //       displayName: 'Page Title',
+  //       section: appTemplateSection,
+  //       type: CommonFieldTypes.SingleLineText,
+  //     },
+  //     {
+  //       name: 'pageDescription',
+  //       displayName: 'Page Description',
+  //       section: appTemplateSection,
+  //       type: CommonFieldTypes.MultiLineText,
+  //     },
+  //     {
+  //       name: 'backgroundImage',
+  //       displayName: 'Background Image',
+  //       section: "Styling",
+  //       type: CommonFieldTypes.Image,
+  //     },
+  //   ],
+  // });
 
   return mergeFs('./data/routes') // relative to process invocation (i.e. your package.json)
     .then((result) => convertToRoutes(result, manifest.language))
