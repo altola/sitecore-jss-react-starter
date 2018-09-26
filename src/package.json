@@ -26,8 +26,10 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@alinta-digital/alinta-kit": "^3.7.1",
     "@sitecore-jss/sitecore-jss-react": "^9.0.5",
     "bootstrap": "^4.1.1",
+    "classnames": "^2.2.6",
     "i18next": "^11.3.2",
     "i18next-fetch-backend": "^0.1.0",
     "isomorphic-fetch": "^2.2.1",
