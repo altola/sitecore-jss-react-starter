@@ -196,6 +196,7 @@ export function setServerSideRenderingState(ssrState) {
  * @param {dataApi.LayoutServiceRequestOptions} options Layout service fetch options
  */
 function getRouteData(route, language, options = {}) {
+  // add sc_site: "preview" to querystringParams to activate the staging/preview site
   const fetchOptions = {
     layoutServiceConfig: { host: config.sitecoreApiHost },
     querystringParams: { sc_lang: language, sc_apikey: config.sitecoreApiKey },
