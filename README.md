@@ -1,4 +1,4 @@
-# Sitecore JSS Tech Preview 4 Hello World Starter
+# 'Hello World' Starter for Sitecore JSS Tech Preview 4
 ## for react.js (without GraphQL)
 
 > This starter is created from the [original React Starter](https://github.com/Sitecore/jss/tree/master/samples/react):
