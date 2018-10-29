@@ -4,22 +4,32 @@ placeholders:
   jss-nav:
     - id: nav
   jss-main:
-  - componentName: Feature
-    fields:
-      title: Let's bring your CTE lessons to life
-      text: At EF, we've spent over 50 years witnessing the power of educational travel, so we know how it can impact your classroom. That's why we design itineraries that complement your curriculum and empower students to make real-world connections to what you teach. Choose from 250+ options to find the tour that will take your CTE lessons to the next level.
-      image:
-        src: /assets/feature1.png
-        width: 140
-      primaryLink:
-        href: https://landing.eftours.com/Director.aspx?sid=6502&sky=V4GC16ND&pgi=41333&pgk=6S4S75QK&eli=70DD3A0240E5C77906C92C7685DD96B5A1B744EF598FD442&rid=19673454&rky=SVCHI1H4&tky=131853142654439431
-        text: WIN YOUR IDEAL TRIP
-      secondaryLink:
-        href: https://landing.eftours.com/Director.aspx?sid=6502&sky=V4GC16ND&pgi=41333&pgk=6S4S75QK&eli=70DD3A0240E5C77906C92C7685DD96B5A1B744EF598FD442&rid=19673454&rky=SVCHI1H4&tky=131853142654439431
-        text: LOSE YOUR IDEAL TRIP
-  - componentName: ContentBlock
-    fields:
-      heading: Welcome to Sitecore JSS
-      content: |
+    - componentName: Carousel
+      fields:
+        slides:
+          - fields:
+              title: slide 1
+              image:
+                src: /assets/feature1.png
+          - fields:
+              title: slide 2
+              image:
+                src: /assets/feature2.png
+    - componentName: Feature
+      fields:
+        title: Let's bring your CTE lessons to life
+        text: At EF, we've spent over 50 years witnessing the power of educational travel, so we know how it can impact your classroom. That's why we design itineraries that complement your curriculum and empower students to make real-world connections to what you teach. Choose from 250+ options to find the tour that will take your CTE lessons to the next level.
+        image:
+          src: /assets/feature1.png
+          width: 140
+        primaryLink:
+          href: https://landing.eftours.com/Director.aspx?sid=6502&sky=V4GC16ND&pgi=41333&pgk=6S4S75QK&eli=70DD3A0240E5C77906C92C7685DD96B5A1B744EF598FD442&rid=19673454&rky=SVCHI1H4&tky=131853142654439431
+          text: WIN YOUR IDEAL TRIP
+        secondaryLink:
+          href: https://landing.eftours.com/Director.aspx?sid=6502&sky=V4GC16ND&pgi=41333&pgk=6S4S75QK&eli=70DD3A0240E5C77906C92C7685DD96B5A1B744EF598FD442&rid=19673454&rky=SVCHI1H4&tky=131853142654439431
+          text: LOSE YOUR IDEAL TRIP
+    - componentName: ContentBlock
+      fields:
+        heading: Welcome to Sitecore JSS
+        content: |
           <p>Let's build something awesome now.</p>
-  - componentName: Carousel

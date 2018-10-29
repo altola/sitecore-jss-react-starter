@@ -10,7 +10,27 @@ export default function(manifest) {
   manifest.addComponent({
     name: 'Carousel',
     icon: SitecoreIcon.DocumentTag,
-    inherits: ['ContentBlock']
+    fields: [
+      {
+        name: "slides", type: CommonFieldTypes.ContentList,
+      }
+    ]
+    /*
+    If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
+    register it here, or components added to that placeholder will not be returned by Sitecore:
+    placeholders: ['exposed-placeholder-name']
+    */
+  });
+
+  manifest.addComponent({
+    name: 'Carousel-slides-Item',
+    icon: SitecoreIcon.Image,
+    fields: [
+      {
+        name: "title", type: CommonFieldTypes.SingleLineText,
+        name: "image", type: CommonFieldTypes.Image,
+      }
+    ]
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
     register it here, or components added to that placeholder will not be returned by Sitecore:
