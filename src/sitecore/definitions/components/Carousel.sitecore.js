@@ -28,6 +28,8 @@ export default function(manifest) {
     fields: [
       {
         name: "title", type: CommonFieldTypes.SingleLineText,
+      },
+      {
         name: "image", type: CommonFieldTypes.Image,
       }
     ]
