@@ -25,6 +25,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@material-ui/core": "^3.3.2",
     "@sitecore-jss/sitecore-jss-react": "^9.0.5",
     "bootstrap": "^4.1.1",
     "i18next": "^11.3.2",

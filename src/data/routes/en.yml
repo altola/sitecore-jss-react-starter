@@ -1,10 +1,12 @@
-id: home-page
 fields:
   pageTitle: Welcome to Sitecore JSS
 placeholders:
+  jss-nav:
+    - id: nav
   jss-main:
   - componentName: ContentBlock
     fields:
       heading: Welcome to Sitecore JSS
       content: |
           <p>Let's build something awesome now.</p>
+  - componentName: Carousel

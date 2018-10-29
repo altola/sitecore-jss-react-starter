@@ -1,0 +1,8 @@
+placeholders:
+  jss-nav:
+    - id: nav
+  jss-main:
+    - componentName: ContentBlock
+      fields:
+        heading: About Us
+        content: About US Text

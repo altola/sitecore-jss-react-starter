@@ -8,13 +8,10 @@ import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore
  */
 export default function(manifest) {
   manifest.addComponent({
-    name: 'ContentBlock',
-    displayName: 'Content Block',
-    // totally optional, but fun
-    icon: SitecoreIcon.PresentationChart,
+    name: 'MainNav',
+    icon: SitecoreIcon.NavDown,
     fields: [
-      { name: 'heading', displayName: "Heading", required: true, type: CommonFieldTypes.SingleLineText },
-      { name: 'content', type: CommonFieldTypes.RichText },
+      { name: 'logo', type: CommonFieldTypes.Image },
     ],
   });
 }
