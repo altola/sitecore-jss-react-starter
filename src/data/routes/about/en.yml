@@ -1,8 +1,40 @@
+id: about-page
+name: about
 placeholders:
   jss-nav:
     - id: nav
   jss-main:
-    - componentName: ContentBlock
+    - componentName: FeatureList
       fields:
-        heading: About Us
-        content: About US Text
+        heading: Why partner with us?
+        ctaLink:
+          href: https://landing.eftours.com/CTE/F19/20K?subj=stem#Enter
+          text: LET'S GET STARTED
+        features:
+          - name: SAFETY-EXPERIENCE
+            displayName: SAFETY-EXPERIENCE
+            template: Feature
+            fields:
+              title: SAFETY-EXPERIENCE
+              text: Safety is our priority—made possible by 50+ years of experience and EF's worldwide presence.
+              image:
+                src: /assets/feature2.png
+                width: 140
+          - name: PERSONALIZED SUPPORT
+            displayName: PERSONALIZED SUPPORT
+            template: Feature
+            fields:
+              title: PERSONALIZED SUPPORT
+              text: Feel confident and prepared thanks to a full-service support team and a free international training tour.
+              image:
+                src: /assets/feature3.png
+                width: 140
+          - name: EDUCATIONAL IMPACT
+            displayName: EDUCATIONAL IMPACT
+            template: Feature
+            fields:
+              title: EDUCATIONAL IMPACT
+              text: Our tours provide professional learning opportunities for you and project-based learning for your students.
+              image:
+                src: /assets/feature4.png
+                width: 140
