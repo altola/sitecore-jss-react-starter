@@ -6,6 +6,7 @@
   "config": {
     "appName": "jssreactstarter",
     "rootPlaceholders": [
+      "jss-nav",
       "jss-main"
     ],
     "sitecoreDistPath": "/dist/jssreactstarter",

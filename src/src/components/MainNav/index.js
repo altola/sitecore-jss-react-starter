@@ -7,7 +7,7 @@ const MainNav = ({ t, i18n, fields }) => (
   <div className="nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
     <h5 className="my-0 mr-md-auto font-weight-normal">
       <NavLink to="/">
-        <Image field={fields.logo} />
+        <Image field={fields.logo} width={140} />
         {/* <img src={logo} height={50} alt="Sitecore" /> */}
       </NavLink>
     </h5>
