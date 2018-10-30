@@ -1,0 +1,28 @@
+fields:
+  pageTitle: Welcome to Sitecore JSS
+placeholders:
+  jss-main:
+    - componentName: Grid
+      placeholders:
+        jss-grid:
+          - componentName: Feature
+            fields:
+              title: 1 SAFETY-EXPERIENCE
+              text: Safety is our priority—made possible by 50+ years of experience and EF's worldwide presence.
+              image:
+                src: /assets/feature2.png
+                width: 140
+          - componentName: Feature
+            fields:
+              title: 2 SAFETY-EXPERIENCE
+              text: Safety is our priority—made possible by 50+ years of experience and EF's worldwide presence.
+              image:
+                src: /assets/feature2.png
+                width: 140
+          - componentName: Feature
+            fields:
+              title: 3 SAFETY-EXPERIENCE
+              text: Safety is our priority—made possible by 50+ years of experience and EF's worldwide presence.
+              image:
+                src: /assets/feature2.png
+                width: 140
