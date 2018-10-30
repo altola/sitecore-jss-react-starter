@@ -1,0 +1,5 @@
+name: premium
+template: service
+fields:
+    name: Premium Service
+    price: 49

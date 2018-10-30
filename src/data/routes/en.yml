@@ -1,5 +1,9 @@
 fields:
   pageTitle: Welcome to Sitecore JSS
+  logo:
+    src: /assets/jss-logo.png
+    alt: Sitecore JSS
+template: HomeRoute
 placeholders:
   jss-nav:
     - id: nav
