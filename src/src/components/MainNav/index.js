@@ -1,7 +1,7 @@
-import React from 'react';
-import { Text, Image } from '@sitecore-jss/sitecore-jss-react';
-import { NavLink } from 'react-router-dom';
-import { translate } from 'react-i18next';
+import React from "react";
+import { Text, Image } from "@sitecore-jss/sitecore-jss-react";
+import { NavLink } from "react-router-dom";
+import { translate } from "react-i18next";
 
 const MainNav = ({ t, i18n, fields }) => (
   <div className="nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
@@ -12,14 +12,7 @@ const MainNav = ({ t, i18n, fields }) => (
       </NavLink>
     </h5>
     <nav className="my-2 my-md-0 mr-md-3">
-      <a
-        className="p-2"
-        href="https://jss.sitecore.net"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {t('Documentation')}
-      </a>
+      <NavLink to="/about" className="p-2">About</NavLink>
     </nav>
   </div>
 );

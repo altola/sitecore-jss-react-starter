@@ -28,6 +28,7 @@
   "dependencies": {
     "@material-ui/core": "^3.3.2",
     "@sitecore-jss/sitecore-jss-react": "^9.0.5",
+    "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "i18next": "^11.3.2",
     "i18next-fetch-backend": "^0.1.0",
@@ -41,7 +42,8 @@
     "react-slick": "^0.23.2",
     "react-stack-grid": "^0.7.1",
     "serialize-javascript": "^1.5.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "universal-cookie": "^3.0.4"
   },
   "devDependencies": {
     "@sitecore-jss/sitecore-jss-cli": "^9.0.6",
