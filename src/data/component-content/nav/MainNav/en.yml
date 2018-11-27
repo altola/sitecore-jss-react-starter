@@ -1,7 +1,0 @@
-id: nav
-componentName: MainNav
-fields:
-    logo:
-        src: /assets/jss-logo.png
-        height: 50
-        alt: Sitecore JSS
