@@ -34,7 +34,7 @@
     "@sitecore-jss/sitecore-jss-react": "^11.0.2",
     "@sitecore-jss/sitecore-jss-tracking": "^11.0.2",
     "axios": "~0.18.0",
-    "bootstrap": "~4.2.1",
+    "bootstrap": "^4.3.1",
     "i18next": "~13.1.2",
     "i18next-fetch-backend": "~2.0.0",
     "isomorphic-fetch": "~2.2.1",
