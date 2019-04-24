@@ -5,6 +5,6 @@ placeholders:
   jss-main:
   - componentName: ContentBlock
     fields:
-      heading: Welcome to Sitecore JSS
-      content: |
+       heading: Welcome to Sitecore JSS
+       content: |
           <p>Let's build something awesome now.</p>

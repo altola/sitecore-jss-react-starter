@@ -41,7 +41,7 @@ export default function i18nInit(language, dictionary) {
       // For higher performance (but less simplicity), consider adding the i18n chained backend to a local cache option like the local storage backend.
 
       // eslint-disable-next-line prettier/prettier
-      const dictionaryServicePath = `${config.sitecoreApiHost}/sitecore/api/jss/dictionary/${config.jssAppName}/{{lng}}?sc_apikey=${config.sitecoreApiKey}`;
+      const dictionaryServicePath = `${config.sitecoreApiHost}/sitecore/api/jss/dictionary/${config.jssreactstarterName}/{{lng}}?sc_apikey=${config.sitecoreApiKey}`;
 
       options.backend = {
         loadPath: dictionaryServicePath,

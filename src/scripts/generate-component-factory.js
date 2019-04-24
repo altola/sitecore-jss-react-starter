@@ -66,9 +66,9 @@ function generateComponentFactory() {
 
     const importVarName = componentFolder.replace(/[^\w]+/g, '');
 
-    console.debug(`Registering JSS component ${componentFolder}`);
-    imports.push(`import ${importVarName} from '../components/${componentFolder}';`);
-    registrations.push(`components.set('${componentFolder}', ${importVarName});`);
+      console.debug(`Registering JSS component ${componentFolder}`);
+      imports.push(`import ${importVarName} from '../components/${componentFolder}';`);
+      registrations.push(`components.set('${componentFolder}', ${importVarName});`);
   });
 
   return `/* eslint-disable */

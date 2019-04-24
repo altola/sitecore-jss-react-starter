@@ -1,14 +1,14 @@
 import React from 'react';
-import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
+import { Placeholder, VisitorIdentification } from '@sitecore-jss/sitecore-jss-react';
 import { NavLink } from 'react-router-dom';
-import { translate } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 import Helmet from 'react-helmet';
 
 // Using bootstrap is completely optional. It's used here to provide a clean layout for samples,
 // without needing extra CSS in the sample app. Remove it in package.json as well if it's removed here.
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/app.css';
-import logo from './assets/jss-logo.png';
+import logo from './assets/jss_logo.png';
 
 /*
   APP LAYOUT
@@ -18,16 +18,18 @@ import logo from './assets/jss-logo.png';
   but components added to inner placeholders are route-specific.
 */
 
+// This is boilerplate navigation for sample purposes. Most apps should throw this away and use their own navigation implementation.
+// Most apps may also wish to use GraphQL for their navigation construction; this sample does not simply to support disconnected mode.
 let Navigation = ({ t, i18n }) => (
-  <div className="nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+  <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
     <h5 className="my-0 mr-md-auto font-weight-normal">
-      <NavLink to="/">
+      <NavLink to="/" className="text-dark">
         <img src={logo} height={50} alt="Sitecore" />
       </NavLink>
     </h5>
     <nav className="my-2 my-md-0 mr-md-3">
       <a
-        className="p-2"
+        className="p-2 text-dark"
         href="https://jss.sitecore.net"
         target="_blank"
         rel="noopener noreferrer"
@@ -41,7 +43,7 @@ let Navigation = ({ t, i18n }) => (
 // inject dictionary props (`t`) into navigation so we can translate it
 // NOTE: using this is needed instead of using i18next directly to keep
 // the component state updated when i18n state (e.g. current language) changes
-Navigation = translate()(Navigation);
+Navigation = withNamespaces()(Navigation);
 
 const Layout = ({ route }) => (
   <React.Fragment>
@@ -52,11 +54,20 @@ const Layout = ({ route }) => (
       </title>
     </Helmet>
 
+    {/*
+      VisitorIdentification is necessary for Sitecore Analytics to determine if the visitor is a robot.
+      If Sitecore XP (with xConnect/xDB) is used, this is required or else analytics will not be collected for the JSS app.
+      For XM (CMS-only) apps, this should be removed.
+
+      VI detection only runs once for a given analytics ID, so this is not a recurring operation once cookies are established.
+    */}
+    <VisitorIdentification />
+
     <Navigation />
 
     {/* root placeholder for the app, which we add components to using route data */}
     <div className="container">
-      <Placeholder name="jss-main" rendering={route} />
+      <Placeholder name="jss-main" rendering={route} route={route} />
     </div>
   </React.Fragment>
 );
